@@ -18,7 +18,7 @@ describe './lib/move.rb' do
 
     it 'allows "X" player in the top left position' do
       board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
-      move(board, 0, "X")
+      move(board, 1, "X")
 
       expect(board).to eq(["X", " ", " ", " ", " ", " ", " ", " ", " "])
     end
