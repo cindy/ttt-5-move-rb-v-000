@@ -47,9 +47,9 @@ describe './lib/move.rb' do
 
     it 'allows "X" to win diagonally' do
       board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
-      move(board, 0)
-      move(board, 4)
-      move(board, 8)
+      move(board, 1)
+      move(board, 5)
+      move(board, 9)
 
       expect(board).to eq(["X", " ", " ", " ", "X", " ", " ", " ", "X"])
     end
