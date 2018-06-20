@@ -25,7 +25,7 @@ describe './lib/move.rb' do
 
     it 'allows "O" player in the middle' do
       board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
-      move(board, 4, "O")
+      move(board, 5, "O")
 
       expect(board).to eq([" ", " ", " ", " ", "O", " ", " ", " ", " "])
     end
