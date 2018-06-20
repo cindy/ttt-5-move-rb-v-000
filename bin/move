@@ -3,6 +3,6 @@
 require_relative '../lib/move.rb'
 
 board = [" "] * 9
-puts "Welcome to Tic Tac Toe!\nWhere would you like to go?"
+puts "Welcome to Tic Tac Toe!"
 user_input = input_to_index(gets.strip)
 move(board, user_input)
