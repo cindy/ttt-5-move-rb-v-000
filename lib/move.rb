@@ -15,4 +15,5 @@ end
 def move(board, user_input, character = "X")
 
   board[user_input] = character
+  display_board(board)
 end
