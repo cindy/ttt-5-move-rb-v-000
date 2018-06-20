@@ -56,15 +56,15 @@ describe './lib/move.rb' do
 
     it 'allows a tie game' do
       board = Array.new(9, " ")
-      move(board, 0, "X")
-      move(board, 1, "O")
-      move(board, 2, "X")
-      move(board, 3, "O")
-      move(board, 4, "X")
-      move(board, 5, "O")
-      move(board, 6, "X")
+      move(board, 1, "X")
+      move(board, 2, "O")
+      move(board, 3, "X")
+      move(board, 4, "O")
+      move(board, 5, "X")
+      move(board, 6, "O")
       move(board, 7, "X")
-      move(board, 8, "O")
+      move(board, 8, "X")
+      move(board, 9, "O")
 
       expect(board).to eq(["X", "O", "X", "O", "X", "O", "X", "X", "O"])
     end
